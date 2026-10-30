@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appliance Energy Consumption</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER: replace this block with the header/nav from your t01 page (same on every page) -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo-link" href="index.html"><span>Appliance Energy</span></a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="#">Energy Data</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <p class="eyebrow">Energy data</p>
+      <h1>Appliance Energy Consumption</h1>
+      <div id="content"></div>
+    </section>
+
+    <section class="research-item">
+      <div class="text-box">
+        <h2>Number of TV models by brand</h2>
+        <p>Each bar shows how many models a brand has in the data set.</p>
+      </div>
+      <!-- T04-3 onwards: the D3 bar chart is drawn into this container -->
+      <div class="responsive-svg-container"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER: replace with your t01 footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Appliance Energy Consumption</p>
+  </footer>
+
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- T04-4: loads the CSV, then calls createBarChart -->
+  <script src="t04-4-load.js"></script>
+  <!-- T04-5 to T04-7: defines createBarChart -->
+  <script src="t04-5-bars.js"></script>
+
+  <!-- Earlier demos (disabled) -->
+  <!-- <script src="energy-d3.js"></script> -->
+  <!-- <script src="t04-3-bars.js"></script> -->
+</body>
+</html>
